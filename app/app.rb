@@ -15,14 +15,17 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/links' do
-    name = params[:site_name]
-    url = params[:site_url]
-    tag = params[:site_tag]
-    link = Link.new(url: url, title: name)
-    tag = Tag.first_or_create(name: tag)
+    link = Link.new(url: params[:site_url],
+     title: params[:site_name])
+    tag = Tag.first_or_create(name: params[:site_tag])
     link.tags << tag
     link.save
     redirect '/links'
   end
 
+  get '/tags/bubbles' do
+    @links = Link.all
+    p @links.tags
+    erb :'links/bubbles'
+  end
 end

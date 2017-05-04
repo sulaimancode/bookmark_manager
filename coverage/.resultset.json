@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/slaimanahmadshah/Projects/bookmark_manager/spec/features/adding_tags_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/slaimanahmadshah/Projects/bookmark_manager/spec/features/creating_links_spec.rb": [
         1,
         1,
@@ -8,10 +20,13 @@
         1,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/slaimanahmadshah/Projects/bookmark_manager/spec/features/filtering_by_tags_spec.rb": [
         1,
         1,
-        null,
-        null,
+        1,
         1,
         1,
         1,
@@ -36,6 +51,6 @@
         null
       ]
     },
-    "timestamp": 1493828691
+    "timestamp": 1493903606
   }
 }
