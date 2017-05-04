@@ -6,4 +6,12 @@ feature 'Adding tags' do
     link = Link.first
     expect(link.tags.map(&:name)).to include('videos')
   end
+
+  scenario 'I can add multiple tags' do
+    add_a_link
+    fill_in :site_tag, with: 'videos fun'
+    click_button 'Add link'
+    link = Link.first
+    expect(link.tags.map(&:name)).to include('videos', 'fun')
+  end
 end
