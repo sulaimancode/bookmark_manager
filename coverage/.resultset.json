@@ -20,6 +20,18 @@
         null,
         null
       ],
+      "/Users/slaimanahmadshah/Projects/bookmark_manager/spec/features/adding_user_accounts_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
       "/Users/slaimanahmadshah/Projects/bookmark_manager/spec/features/creating_links_spec.rb": [
         1,
         1,
@@ -59,6 +71,6 @@
         null
       ]
     },
-    "timestamp": 1493914539
+    "timestamp": 1493990975
   }
 }
