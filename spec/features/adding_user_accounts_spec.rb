@@ -8,8 +8,9 @@ feature 'Adding user accounts' do
     expect { sign_up }.to change(User, :count).by(1)
   end
 
-  scenario 'password requires confirmation' do
-    sign_up(password_confirmation: 'scrt')
+  scenario 'password confirmation not matching password' do
     expect { sign_up(password_confirmation: 'scrt') }.to_not change(User, :count)
+    expect(current_path).to eq '/users'
+    expect(page).to have_content 'Password and confirmation password do not match'
   end
 end
